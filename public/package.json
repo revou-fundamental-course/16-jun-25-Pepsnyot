@@ -1,0 +1,23 @@
+{
+  "name": "16-jun-25-pepsnyot",
+  "version": "1.0.0",
+  "main": "anime.iife.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revou-fundamental-course/16-jun-25-Pepsnyot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revou-fundamental-course/16-jun-25-Pepsnyot/issues"
+  },
+  "homepage": "https://github.com/revou-fundamental-course/16-jun-25-Pepsnyot#readme",
+  "description": "",
+  "dependencies": {
+    "three": "^0.177.0"
+  }
+}

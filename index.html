@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle</title>
+
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        canvas {
+            display: block;
+        }
+        
+        #text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-link" data-index="0"><a href="#">Home</a></div>
+        <div class="nav-link" data-index="1"><a href="#">Contact</a></div>
+        <div class="nav-link" data-index="2"><a href="#">About</a></div>
+        <div class="nav-link" data-index="3"><a href="#">Help</a></div>
+        <span class="highlight"></span>
+    </nav>
+    <script src="js\script.js"></script>
+
+
+    <header>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <h1 class="selamat_datang">
+                            <span>w</span>
+                            <span>E</span>
+                            <span>L</span>
+                            <span>c</span>
+                            <span>O</span>
+                            <span>m</span>
+                            <span>e</span>
+                            <span>&nbsp;</span>
+                            <span>t</span>
+                            <span>O</span>
+                            <span>&nbsp;</span>
+                            <span>m</span>
+                            <span>y</span>
+                            <span>&nbsp;</span>
+                            <span>K</span>
+                            <span>A</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>K</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p>""</p>
+    </main>
+
+    <footer>
+        <p>dimana</p>
+    </footer>
+
+    <!-- Anime.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+
+    <script>
+        anime({
+            targets: '.selamat_datang span',
+            translateY: [{
+                value: '-2.75rem',
+                duration: 600,
+                easing: 'easeOutExpo'
+            }, {
+                value: 0,
+                duration: 800,
+                easing: 'easeOutBounce',
+                delay: 100
+            }],
+            rotate: {
+                value: '-1turn',
+                delay: 0
+            },
+            delay: (_, i) => i * 50,
+            easing: 'easeInOutCirc',
+            loop: true,
+            loopDelay: 1000
+        });
+    </script>
+
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+
+    <!-- Text Below the 3D Model -->
+    <div id="text">Rumus Luas Segitiga</div>
+</body>
+
+</html>
