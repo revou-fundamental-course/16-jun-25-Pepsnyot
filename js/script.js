@@ -1,3 +1,4 @@
+console.log('Script loaded');
 const links = document.querySelectorAll('.nav-link');
 const highlight = document.querySelector('.highlight');
 
