@@ -18,7 +18,9 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
 camera.position.set(0, 0, 10);
 
-// Ground
+
+
+// Groun
 const groundGeometry = new THREE.PlaneGeometry(40, 40);
 const groundMaterial = new THREE.MeshStandardMaterial({ color: 0x000 });
 const ground = new THREE.Mesh(groundGeometry, groundMaterial);
