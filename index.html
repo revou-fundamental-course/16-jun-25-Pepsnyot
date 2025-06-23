@@ -77,12 +77,14 @@
     <main>
         <div id="atur">
             <div class="toggle-container">
-                <span class="toggle-label">No</span>
-                <label class="toggle-switch">
-                <input type="checkbox" id="toggleButton">
-                <span class="slider"></span>
-            </label>
-                <span class="toggle-label">Yes</span>
+                <span class="toggle-label">Luas</span>
+
+                <label class="toggle-switch"> 
+                        <input type="checkbox" id="toggleButton" aria-label="Ganti antara rumus Luas dan Keliling">
+                        <span class="slider"></span> <!-- INI PENTING UNTUK ICON TOGGLE -->
+                 </label>
+
+                <span class="toggle-label">Keliling</span>
             </div>
         </div>
 
@@ -90,27 +92,39 @@
     </main>
 
     <footer>
-        </div>
-        <div class="text-display">
-            <p class="text-a" id="textA">
-                <p>Luas segitiga dihitung dengan rumus:
-                    <br><strong>L = ½ × alas × tinggi</strong>
-                    <br><br> Contoh: Jika alas = 6 cm dan tinggi = 4 cm, maka:
-                    <br>L = ½ × 6 × 4 = 12 cm²</p>
+        <div class="text-a" id="textA">
+            <p>Luas segitiga dihitung dengan rumus:
+                <br><strong>L = ½ × alas × tinggi</strong>
+                <br><br> Contoh: Jika alas = 6 cm dan tinggi = 4 cm, maka:
+                <br>L = ½ × 6 × 4 = 12 cm²
             </p>
-            <p class="text-b" id="textB">
-                <p>
-                    Keliling segitiga adalah jumlah panjang semua sisinya. <br> Rumus: <strong>K = a + b + c</strong><br><br> Contoh:
-                    <br> Jika a = 5 cm, b = 7 cm, dan c = 6 cm, maka:<br>
-                    <strong>K = 5 + 7 + 6 = 18 cm</strong>
-                </p>
-            </p>
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas1" name="alas" placeholder="Masukkan alas">
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi1" name="tinggi" placeholder="Masukkan tinggi">
+            <button onclick="hitungLuas()">Hitung Luas</button>
+            <p>Hasil: <span id="hasilluas"></span></p>
         </div>
 
+        <div class="text-b" id="textB">
+            <p>Keliling segitiga adalah jumlah panjang semua sisinya.
+                <br> Rumus: <strong>K = a + b + c</strong><br><br> Contoh:
+                <br> Jika a = 5 cm, b = 7 cm, dan c = 6 cm, maka:<br>
+                <strong>K = 5 + 7 + 6 = 18 cm</strong>
+            </p>
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas2" name="alas" placeholder="Masukkan alas">
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi2" name="tinggi" placeholder="Masukkan tinggi">
+            <label for="miring">Sisi Miring:</label>
+            <input type="number" id="miring" name="miring" placeholder="Masukkan sisi miring">
+            <button onclick="hitungKeliling()">Hitung Keliling</button>
+            <p>Hasil: <span id="hasilkeliling"></span></p>
+        </div>
     </footer>
-
     <!-- Anime.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js">
+    </script>
 
     <script>
         anime({
@@ -143,7 +157,9 @@
     <script type="module" src="js/main.js"></script>
 
     <!-- Text Below the 3D Model -->
-    <div id="text1">Rumus Luas Segitiga</div>
+    <div id="text1">Rumus Segitiga</div>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>
